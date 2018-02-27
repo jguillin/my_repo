@@ -1,7 +1,6 @@
 <!DOCTYPE html><html>
 <head>
-	<title>Calculator</title><meta charset="utf-8">
-	
+	<title>Calculator</title><meta charset="utf-8">	
 	<script type="text/javascript">
 
 	function cube() {
@@ -14,25 +13,34 @@
 	var num = document.getElementById("n2");
 	num.value = Math.sin(num.value);
 	}
+        
+
+	function fourth() {
+	var num = document.getElementById("n3");
+	num.value = Math.pow(num.value, 4);
+	}
 
 	</script>
-
 </head>
-
+    
 <body>
-
+    
 	<h1 style="color: dimgray">Calculadora de Jimmy Guillin Camacho</h1>
-
+    
 	<h4 style="color: darkslategrey">Número1:</h4>
 	<input type="text" id="n1"><p>
 	<button style="background-color: cadetblue; color: aliceblue; border-radius: 5px"  onclick="cube()"> x^3 </button>
     <br/><br/>
+    
 	<h4 style="color: darkslategrey">Número2:</h4>
 	<input type="text" id="n2"><p>
 	<button style="background-color: cadetblue; color: aliceblue; border-radius: 5px" onclick="seno()"> sen(x) </button>
+    
+    <h4 style="color: darkslategrey">Número3:</h4>
+    <input type="text" id="n3"><p>
+	<button style="background-color: cadetblue; color: aliceblue; border-radius: 5px" onclick="fourth()"> x^4 </button>
 
 </body>
-
 </html>
 
  
